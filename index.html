@@ -9,21 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">dffdb</header>
+    <header class="header">
+        <h1 class="header__title">Library</h1>
+    </header>
     <main class="main">
-        <button class="main__add-button">dwfger</button>
-        <div class="main__container">
+        <button class="main__add-button button">Add Book</button>
+        <div class="main__book-container">
         </div>
     </main>
     <footer class="footer">fbd</footer>
     <div class="modal">
             <form action="" class="modal__form">
-                <input type="text" class="modal__input">
-                <input type="text" class="modal__input">
-                <input type="text" class="modal__input">
-                <input type="radio" class="modal__input">
-                <button type="submit" class="modal__submit-button"></button>
+                <h2>Add new book</h2>
+                <input type="text" id="title" class="modal__input" placeholder="Title" required>
+                <input type="text" id="author" class="modal__input" placeholder="Author" required>
+                <input type="number" id="pages" class="modal__input" placeholder="Pages" required>
+                <div class="modal__checkbox-container">
+                    <label for="isRead" class="modal__checkbox-label">Have you read it?</label>
+                    <input type="checkbox" name="is_read" id="isRead" class="modal__checkbox" id="modal__checkbox">
+                </div>
+                <button type="submit" class="modal__submit-button button">Submit</button>
             </form>
     </div>
+    <div class="overlay"></div>
 </body>
 </html>
